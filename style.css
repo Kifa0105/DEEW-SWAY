@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+* {
+margin: 0;
+padding: 0;
+}
+body{
+margin: 0;
+padding: 0;
+background-color:#000000
+}
+header{
+	    position: relative;
+justify-content: space-evenly;
+text-align: justify;
+height: 11em;
+background: #000000;
+color: #FFFFFF;
+width: 100%;
+box-shadow:0px 5px 10px black;
+border-bottom: 2px solid #FFFFFF;
+}
+#logo{
+	margin-left: auto;
+    display: flex;
+    width: fit-content;
+}
+.background{position:fixed;
+	width:100vw;
+	height:100vh;
+	top: 0;
+	object-fit: cover;
+	z-index: -100;
+	opacity:0.2;
+	background-color:#000000;
+} 
+.image-p{
+        background: #000000;
+    object-fit: cover;
+    border-radius: 50px 50px 0px 0px;
+    width: 100%;
+	
+} 
+main{
+	padding:100px;
+}
+h1{
+	position:absolute;
+	font-size:56px;
+}
+p{
+	padding: 10px;
+	font-family: 'Secular One', sans-serif;
+}
+.vid-f{
+	    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    z-index: -90;
+}
+.vid-s{
+	    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.vid{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 50px;
+    width: 30%;
+    border: 5px #FFFFFF solid;
+}
+.menu{
+	    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+	max-width: 1500px;
+}
+.menu *{
+margin: 0;
+padding: 0;
+}
+.menu ul,
+.menu ol{
+list-style: none;
+width: 100%;
+}
+.menu > ul{
+display: flex;
+justify-content: space-between;
+}
+.menu >ul li{
+	position:relative;
+}
+.menu > ul li a{
+display: block;
+padding:30px;
+font-size: 36px;
+color: #FFFFFF;
+text-decoration: none;
+text-transform:uppercase;
+font-family: "Caveat", sans-serif;
+transition: all 0.3s ease;
+}
+.menu > ul li > a i.fa{
+position: absolute;
+top: 15px;
+left: 1px;
+font-size: 10px;
+}
+.menu li a:hover{
+ background: #FFFFFF;
+ color:#000000;
+ box-shadow: 1px 5px 10px -5px black;
+  transition: all 0.3s ease;
+}
+.menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+ background: black;
+ width: fit-content
+}
+.menu li > ul li a{
+ padding: 10px;
+ text-transform: none;
+}
+.menu li > ul li ul{
+ position: absolute;
+ right: -150px;
+ top: 0;
+}
+.menu li:hover > ul{
+ display: block;
+}
+

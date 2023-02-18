@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+* {
+margin: 0;
+padding: 0;
+}
+body{
+margin: 0;
+padding: 0;
+background-color:#000000
+}
+header{
+justify-content: space-evenly;
+display:flex;
+text-align: justify;
+height: 11em;
+background: #000000;
+color: #FFFFFF;
+width: 100%;
+box-shadow:0px 5px 10px black;
+border-bottom: 2px solid #FFFFFF;
+}
+.background{
+	position:fixed;
+	width:100vw;
+	height:100vh;
+	top: 0;
+	left:0;
+	object-fit: cover;
+	z-index: -1;
+	opacity:0.3;
+	background-color:#000000;
+}
+p { 
+	margin-bottom: 20px;
+    text-indent: 1.5em; 
+    text-align: justify; 
+   }
+.facts{
+	color:#FFFFFF;
+	text-align:justify;
+	margin:150px;
+	font-size:32px;	
+	font-family: 'Secular One', sans-serif;
+}	
+.facts>p::first-letter{
+	color:#FF0000;
+}
+.red{
+	color: #FF0000;
+}
+.menu{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+	max-width: 1500px;
+}
+.menu *{
+margin: 0;
+padding: 0;
+}
+.menu ul,
+.menu ol{
+list-style: none;
+width: 100%;
+}
+.menu > ul{
+display: flex;
+justify-content: space-between;
+}
+.menu >ul li{
+	position:relative;
+}
+.menu > ul li a{
+display: block;
+padding:30px;
+font-size: 36px;
+color: #FFFFFF;
+text-decoration: none;
+text-transform:uppercase;
+font-family: 'Caveat', cursive;
+transition: all 0.3s ease;
+}
+.menu > ul li > a i.fa{
+position: absolute;
+top: 15px;
+left: 1px;
+font-size: 10px;
+}
+.menu li a:hover{
+ background: #FFFFFF;
+ color:#000000;
+ box-shadow: 1px 5px 10px -5px black;
+  transition: all 0.3s ease;
+}
+.menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+ background: black;
+ width: fit-content
+}
+.menu li > ul li a{
+ padding: 10px;
+ text-transform: none;
+}
+.menu li > ul li ul{
+ position: absolute;
+ right: -150px;
+ top: 0;
+}
+.menu li:hover > ul{
+ display: block;
+}
+.line {
+    border-bottom: 2px solid #FFFFFF; /* Параметры линии */
+   }
